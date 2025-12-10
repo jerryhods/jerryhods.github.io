@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣五大熱門大型賣場介紹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .store-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .store-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-shopping-cart text-blue-600 text-2xl mr-2"></i>
+                    <span class="font-bold text-xl tracking-wide text-gray-800">台灣賣場指南</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#intro" class="text-gray-600 hover:text-blue-600 transition">首頁</a>
+                    <a href="#stores" class="text-gray-600 hover:text-blue-600 transition">賣場介紹</a>
+                    <a href="#comparison" class="text-gray-600 hover:text-blue-600 transition">比較表</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="intro" class="bg-blue-600 text-white py-16 hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">探索台灣 Top 5 大型賣場</h1>
+            <p class="text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">
+                從美式倉儲到在地超市霸主，帶您一覽台灣人最愛逛的購物天堂。無論是採買日常用品、生鮮食材還是尋找高CP值家電，這裡都有最佳指引。
+            </p>
+            <a href="#stores" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-400 hover:text-blue-800 transition shadow-lg transform hover:scale-105">
+                開始探索
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content: Store Cards -->
+    <div id="stores" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">熱門賣場詳細介紹</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. Costco -->
+            <div class="store-card bg-white rounded-xl overflow-hidden border border-gray-100">
+                <div class="relative h-48 bg-red-700 flex items-center justify-center">
+                   <img src="https://placehold.co/600x400/B81D24/FFFFFF?text=Costco+%E5%A5%BD%E5%B8%82%E5%A4%9A&font=roboto" alt="Costco" class="object-cover w-full h-full opacity-90">
+                   <div class="absolute top-4 right-4 bg-yellow-400 text-red-800 text-xs font-bold px-2 py-1 rounded">會員制首選</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                        Costco 好市多
+                        <span class="ml-2 text-sm text-gray-500 font-normal">(美式倉儲)</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        全球知名的會員制倉儲批發賣場。以「量大、高品質、獨家進口」聞名，是家庭客與代購族的最愛。
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>招牌特色：</strong>烤雞、大披薩、草莓蛋糕、Kirkland自有品牌。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>優點：</strong>無條件退貨機制寬鬆、油價便宜。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-circle text-red-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>注意：</strong>需繳納年費，僅接受特定聯名卡或現金。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Carrefour -->
+            <div class="store-card bg-white rounded-xl overflow-hidden border border-gray-100">
+                <div class="relative h-48 bg-blue-700 flex items-center justify-center">
+                    <img src="https://placehold.co/600x400/003399/FFFFFF?text=Carrefour+%E5%AE%B6%E6%A8%82%E7%A6%8F&font=roboto" alt="Carrefour" class="object-cover w-full h-full opacity-90">
+                    <div class="absolute top-4 right-4 bg-white text-blue-800 text-xs font-bold px-2 py-1 rounded">分店最多</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                        Carrefour 家樂福
+                        <span class="ml-2 text-sm text-gray-500 font-normal">(綜合量販)</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        源自法國，深耕台灣多年。擁有「量販店」與「便利購超市」兩種型態，據點遍布全台。
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>招牌特色：</strong>進口食品區(歐洲商品多)、現烤麵包、熟食區。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>優點：</strong>24小時營業(部分)、線上購物方便、結合美食街。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>定位：</strong>一站式購足，生活機能最強。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. RT-Mart -->
+            <div class="store-card bg-white rounded-xl overflow-hidden border border-gray-100">
+                <div class="relative h-48 bg-red-600 flex items-center justify-center">
+                    <img src="https://placehold.co/600x400/E3001B/FFFFFF?text=RT-Mart+%E5%A4%A7%E6%BD%A4%E7%99%BC&font=roboto" alt="RT-Mart" class="object-cover w-full h-full opacity-90">
+                    <div class="absolute top-4 right-4 bg-white text-red-600 text-xs font-bold px-2 py-1 rounded">高CP值</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                        RT-Mart 大潤發
+                        <span class="ml-2 text-sm text-gray-500 font-normal">(平價量販)</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        主打低價策略與豐富的生鮮選擇。近年被全聯收購後，生鮮品質與陳列大幅升級，結合IKEA店中店成為新特色。
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>招牌特色：</strong>生鮮肉品專櫃、迪卡儂/IKEA策略結盟、現做熟食。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>優點：</strong>促銷活動多、價格極具競爭力。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>定位：</strong>家庭主婦與精打細算族群的最愛。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. A.mart -->
+            <div class="store-card bg-white rounded-xl overflow-hidden border border-gray-100">
+                <div class="relative h-48 bg-green-600 flex items-center justify-center">
+                    <img src="https://placehold.co/600x400/00964A/FFFFFF?text=A.mart+%E6%84%9B%E8%B2%B7&font=roboto" alt="A.mart" class="object-cover w-full h-full opacity-90">
+                    <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">在地親切</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                        A.mart 愛買
+                        <span class="ml-2 text-sm text-gray-500 font-normal">(在地量販)</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        遠東集團旗下量販店，結合Happy Go點數生態圈。近年轉型為「水費型」量販，強調舒適與在地化商品。
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>招牌特色：</strong>台灣在地農產品推廣、Happy Go集點折抵。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>優點：</strong>購物環境寬敞明亮、各類銀行優惠多。</span>
+                        </div>
+                         <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>定位：</strong>結合百貨資源的精緻型量販。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. PX Mart (Special Feature) -->
+            <div class="store-card bg-white rounded-xl overflow-hidden border border-gray-100">
+                <div class="relative h-48 bg-blue-500 flex items-center justify-center">
+                     <img src="https://placehold.co/600x400/005DA3/FFFFFF?text=PX+Mart+%E5%85%A8%E8%81%AF&font=roboto" alt="PX Mart" class="object-cover w-full h-full opacity-90">
+                     <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">據點密度王</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                        PX Mart 全聯
+                        <span class="ml-2 text-sm text-gray-500 font-normal">(超級超市)</span>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        雖定位為超市，但憑藉千家門市與大型旗艦店，已成為台灣人最依賴的生鮮雜貨通路，更收購了大潤發。
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>招牌特色：</strong>甜點系列(We Sweet)、全聯佩樺圓夢社會福利基金會、PX Pay。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>優點：</strong>深入社區巷弄、生鮮小包裝適合小家庭。</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span class="text-sm text-gray-700"><strong>定位：</strong>全台灣人的大冰箱。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Bonus: IKEA or Donki Card if needed, but we stick to 5 grids structure, maybe add a CTA card -->
+             <div class="store-card bg-gray-50 rounded-xl overflow-hidden border border-gray-200 border-dashed flex flex-col items-center justify-center p-6 text-center">
+                <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-700 mb-2">尋找其他特色賣場？</h3>
+                <p class="text-gray-500 text-sm mb-6">
+                    IKEA、特力屋、唐吉訶德(Don Don Donki) 也是深受台灣人喜愛的大型專賣店。
+                </p>
+                <button onclick="alert('建議您可以搜尋附近的 IKEA 或 唐吉訶德！')" class="text-blue-600 font-semibold hover:underline">
+                    查看更多推薦
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Comparison Table Section -->
+    <div id="comparison" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">賣場超級比一比</h2>
+                <p class="mt-4 text-gray-500">一張表看懂適合您的購物去處</p>
+            </div>
+            
+            <div class="overflow-x-auto shadow-lg rounded-lg">
+                <table class="w-full table-auto">
+                    <thead>
+                        <tr class="bg-gray-800 text-white text-left">
+                            <th class="px-6 py-4">賣場名稱</th>
+                            <th class="px-6 py-4">入場門檻</th>
+                            <th class="px-6 py-4">主要優勢</th>
+                            <th class="px-6 py-4">適合族群</th>
+                            <th class="px-6 py-4">自有支付/會員</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-red-700">好市多 (Costco)</td>
+                            <td class="px-6 py-4">需年費會員</td>
+                            <td class="px-6 py-4">大份量、退貨阿莎力、進口獨家</td>
+                            <td class="px-6 py-4">大家庭、公司行號、開車族</td>
+                            <td class="px-6 py-4">Costco聯名卡</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-blue-700">家樂福 (Carrefour)</td>
+                            <td class="px-6 py-4">免費入場</td>
+                            <td class="px-6 py-4">品項最全、據點多、24H營業</td>
+                            <td class="px-6 py-4">一般家庭、夜貓子、外食族</td>
+                            <td class="px-6 py-4">家樂福錢包</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-red-600">大潤發 (RT-Mart)</td>
+                            <td class="px-6 py-4">免費入場</td>
+                            <td class="px-6 py-4">生鮮豐富、異業結盟(IKEA/迪卡儂)</td>
+                            <td class="px-6 py-4">精打細算的主婦、週末採買</td>
+                            <td class="px-6 py-4">大潤發會員/全支付</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-green-600">愛買 (A.mart)</td>
+                            <td class="px-6 py-4">免費入場</td>
+                            <td class="px-6 py-4">結合百貨、點數通用、環境舒適</td>
+                            <td class="px-6 py-4">注重購物體驗者、HappyGo卡友</td>
+                            <td class="px-6 py-4">HappyGo Pay</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-blue-600">全聯 (PX Mart)</td>
+                            <td class="px-6 py-4">免費入場</td>
+                            <td class="px-6 py-4">離家近、據點密、小份量好買</td>
+                            <td class="px-6 py-4">單身租屋族、沒時間跑遠路者</td>
+                            <td class="px-6 py-4">PX Pay / 全支付</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-2">&copy; 2024 台灣大型賣場指南. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">本頁面僅供資訊參考，實際營業時間與優惠請以各賣場公告為準。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
